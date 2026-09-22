@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events | Technoholics</title>
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img class="logo logo-left" src="KLE'S.png" alt="KLE Society" style="height: 50px; width: 90px;">
+
+    <div class="college-name">
+      <p class="society">Kle Society's</p>
+      <h2>College of Computer Applications</h2>
+      <p class="address">RLS College, Corporation Circle, Dharwad.</p>
+    </div>
+
+    <img class="logo logo-right" src="kleeeee.png" alt="KLE BCA Dharwad" style="height: 110px; width: 100px;">
+  </header>
+
+  <nav class="main-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="events.html" class="active" aria-current="page">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="events-page">
+
+    <input type="radio" name="category" id="cat-technical" class="cat-radio">
+    <input type="radio" name="category" id="cat-non-technical" class="cat-radio">
+
+    <section class="events-hero">
+      <h1>EVENTS</h1>
+      <p class="tagline">Choose a category</p>
+    </section>
+
+    <div class="category-picker">
+      <label class="category" for="cat-technical">
+        <span class="category-title">Technical</span>
+        <span class="category-note">Code, build and problem-solve</span>
+      </label>
+
+      <label class="category" for="cat-non-technical">
+        <span class="category-title">Non-Technical</span>
+        <span class="category-note">Games, quizzes and fun rounds</span>
+      </label>
+    </div>
+
+    <p class="picker-hint">Select a category to see its events.</p>
+
+    <section class="event-panel" id="technical-panel">
+      <h2>Technical Events</h2>
+
+      <div class="card-grid">
+        <article class="event-card">
+          <a class="info-btn" href="#hackathon-popup"
+             aria-label="Hackathon details and rules"
+             title="Details &amp; rules">i</a>
+
+          <div class="event-name">Hackathon</div>
+
+          <p class="event-desc">Build a working solution to a real problem with your team, in a single day.</p>
+
+          <a class="register-btn" href="https://forms.gle/1RREen2RHeyMf4Um9" target="_blank" rel="noopener">Register Now</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="event-panel" id="non-technical-panel">
+      <h2>Non-Technical Events</h2>
+
+      <div class="card-grid card-grid-multi">
+        <article class="event-card">
+          <a class="info-btn" href="#event1-popup"
+             aria-label="Event 1 details and rules"
+             title="Details &amp; rules">i</a>
+
+          <div class="event-name">Event 1</div>
+
+          <p class="event-desc">Details for Event 1 will be added here.</p>
+
+          <a class="register-btn" href="#" target="_blank" rel="noopener">Register Now</a>
+        </article>
+
+        <article class="event-card">
+          <a class="info-btn" href="#event2-popup"
+             aria-label="Event 2 details and rules"
+             title="Details &amp; rules">i</a>
+
+          <div class="event-name">Event 2</div>
+
+          <p class="event-desc">Details for Event 2 will be added here.</p>
+
+          <a class="register-btn" href="#" target="_blank" rel="noopener">Register Now</a>
+        </article>
+
+        <article class="event-card">
+          <a class="info-btn" href="#event3-popup"
+             aria-label="Event 3 details and rules"
+             title="Details &amp; rules">i</a>
+
+          <div class="event-name">Event 3</div>
+
+          <p class="event-desc">Details for Event 3 will be added here.</p>
+
+          <a class="register-btn" href="#" target="_blank" rel="noopener">Register Now</a>
+        </article>
+
+        <article class="event-card">
+          <a class="info-btn" href="#event4-popup"
+             aria-label="Event 4 details and rules"
+             title="Details &amp; rules">i</a>
+
+          <div class="event-name">Event 4</div>
+
+          <p class="event-desc">Details for Event 4 will be added here.</p>
+
+          <a class="register-btn" href="#" target="_blank" rel="noopener">Register Now</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="popup" id="event1-popup">
+    <a class="popup-backdrop" href="#non-technical-panel" aria-label="Close details"></a>
+
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="event1-title">
+      <a class="popup-close" href="#non-technical-panel" aria-label="Close details">&times;</a>
+
+      <h2 id="event1-title">Event 1</h2>
+
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li>Rule 1 for Event 1.</li>
+        <li>Rule 2 for Event 1.</li>
+        <li>Rule 3 for Event 1.</li>
+      </ul>
+
+      <div class="info-row">
+        <div>
+          <h3>Venue</h3>
+          <p>Venue to be announced.</p>
+        </div>
+        <div>
+          <h3>Timing</h3>
+          <p>Date: To be announced<br>Time: To be announced</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="event2-popup">
+    <a class="popup-backdrop" href="#non-technical-panel" aria-label="Close details"></a>
+
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="event2-title">
+      <a class="popup-close" href="#non-technical-panel" aria-label="Close details">&times;</a>
+
+      <h2 id="event2-title">Event 2</h2>
+
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li>Rule 1 for Event 2.</li>
+        <li>Rule 2 for Event 2.</li>
+        <li>Rule 3 for Event 2.</li>
+      </ul>
+
+      <div class="info-row">
+        <div>
+          <h3>Venue</h3>
+          <p>Venue to be announced.</p>
+        </div>
+        <div>
+          <h3>Timing</h3>
+          <p>Date: To be announced<br>Time: To be announced</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="event3-popup">
+    <a class="popup-backdrop" href="#non-technical-panel" aria-label="Close details"></a>
+
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="event3-title">
+      <a class="popup-close" href="#non-technical-panel" aria-label="Close details">&times;</a>
+
+      <h2 id="event3-title">Event 3</h2>
+
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li>Rule 1 for Event 3.</li>
+        <li>Rule 2 for Event 3.</li>
+        <li>Rule 3 for Event 3.</li>
+      </ul>
+
+      <div class="info-row">
+        <div>
+          <h3>Venue</h3>
+          <p>Venue to be announced.</p>
+        </div>
+        <div>
+          <h3>Timing</h3>
+          <p>Date: To be announced<br>Time: To be announced</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="event4-popup">
+    <a class="popup-backdrop" href="#non-technical-panel" aria-label="Close details"></a>
+
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="event4-title">
+      <a class="popup-close" href="#non-technical-panel" aria-label="Close details">&times;</a>
+
+      <h2 id="event4-title">Event 4</h2>
+
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li>Rule 1 for Event 4.</li>
+        <li>Rule 2 for Event 4.</li>
+        <li>Rule 3 for Event 4.</li>
+      </ul>
+
+      <div class="info-row">
+        <div>
+          <h3>Venue</h3>
+          <p>Venue to be announced.</p>
+        </div>
+        <div>
+          <h3>Timing</h3>
+          <p>Date: To be announced<br>Time: To be announced</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="hackathon-popup">
+    <a class="popup-backdrop" href="#technical-panel" aria-label="Close details"></a>
+
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="hackathon-title">
+      <a class="popup-close" href="#technical-panel" aria-label="Close details">&times;</a>
+
+      <h2 id="hackathon-title">Hackathon</h2>
+
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li>Teams of 2 to 4 members, all from KLE BCA Dharwad.</li>
+        <li>Bring your own laptop and charger.</li>
+        <li>All work must be built during the event. Pre-built projects are not allowed.</li>
+        <li>Any programming language or framework may be used.</li>
+        <li>Carry your college ID card at all times.</li>
+        <li>The judges' decision is final.</li>
+      </ul>
+
+      <div class="info-row">
+        <div>
+          <h3>Venue</h3>
+          <p>Computer Lab, College of Computer Applications, RLS College, Corporation Circle, Dharwad.</p>
+        </div>
+        <div>
+          <h3>Timing</h3>
+          <p>Date: To be announced<br>Time: 10:00 AM to 4:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
