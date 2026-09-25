@@ -11,14 +11,13 @@ body {
 .college-header {
     width: 100%;
 }
-
-.top-section {
-    display: flex;
-    align-items: center;
-    padding: 10px 5%;
-    background-color: transparent;
-}
-
+.top-section{
+    flex-wrap:wrap;
+    justify-content:space-between;
+    text-align:center;
+    padding:10px 4%;
+    gap:8px;
+~}
 .logo,
 .logo1 {
     width: 80px;
