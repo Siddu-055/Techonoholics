@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
   --bg-base: #160f38;
@@ -16,7 +17,7 @@
   --line: #ffffff29;
   --surface: #ffffff0d;
 
-  --font: "Orbitron", "Arial Black", "Century Gothic", sans-serif;
+  --font: "Poppins", Arial, sans-serif;
 }
 
 * {
@@ -73,21 +74,21 @@ a {
   font-size: 1.15rem;
   font-weight: bold;
   letter-spacing: 0.12em;
-  color: var(--cyan);
+  color: #00a0d5;
 }
 
 .college-name h2 {
   font-size: clamp(1.4rem, 3.2vw, 2.3rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--periwinkle);
+  color: #b5e7ff;
   line-height: 1.15;
 }
 
 .address {
   font-size: 1.05rem;
   letter-spacing: 0.1em;
-  color: var(--teal-text);
+  color: #329ec2d3;
 }
 
 .main-nav {
@@ -167,10 +168,12 @@ a {
   padding: 2rem 1.8rem;
   text-align: left;
   color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #ffffff18, #ffffff08);
+  border: 1px solid #ffffff35;
   border-left: 4px solid var(--periwinkle);
   border-radius: 6px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 40px #00000026, inset 0 1px #ffffff24;
   cursor: pointer;
   transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
@@ -241,6 +244,16 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+#technical-panel h2 {
+  color: #61eaff;
+  border-bottom-color: #19cde866;
+}
+
+#non-technical-panel h2 {
+  color: #ff9acb;
+  border-bottom-color: #ff6da466;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -271,14 +284,34 @@ a {
   gap: 2.2rem;
   min-height: 480px;
   padding: 3.5rem 3rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #ffffff18, #ffffff07);
+  border: 1px solid #ffffff35;
   border-radius: 16px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 45px #0000002e, inset 0 1px #ffffff24;
   transition: border-color 0.2s;
 }
 
 .event-card:hover {
   border-color: var(--gold);
+}
+
+#technical-panel .event-card {
+  border-color: #19cde866;
+}
+
+#technical-panel .event-card:hover {
+  border-color: #61eaff;
+  box-shadow: 0 20px 45px #00cfff2e, inset 0 1px #ffffff35;
+}
+
+#non-technical-panel .event-card {
+  border-color: #ff6da466;
+}
+
+#non-technical-panel .event-card:hover {
+  border-color: #ff9acb;
+  box-shadow: 0 20px 45px #ff4f9b2e, inset 0 1px #ffffff35;
 }
 
 .event-name {
@@ -293,6 +326,18 @@ a {
   border-radius: 8px;
 }
 
+#technical-panel .event-name {
+  color: #61eaff;
+  border-color: #19cde8;
+  background: #00b9d414;
+}
+
+#non-technical-panel .event-name {
+  color: #ff9acb;
+  border-color: #ff6da4;
+  background: #ff4f9b14;
+}
+
 .event-desc {
   width: 100%;
   padding: 1.8rem 1.4rem;
@@ -303,6 +348,16 @@ a {
   background: #ffffff0a;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+#technical-panel .event-desc {
+  color: #d5faff;
+  border-color: #19cde866;
+}
+
+#non-technical-panel .event-desc {
+  color: #ffe0ef;
+  border-color: #ff6da466;
 }
 
 .card-grid-multi .event-card {
