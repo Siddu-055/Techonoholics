@@ -297,5 +297,20 @@
     </div>
   </div>
 
+  <script>
+    document.querySelectorAll('.cat-radio').forEach((radio) => {
+      radio.addEventListener('change', () => {
+        const panelId = radio.id === 'cat-technical'
+          ? 'technical-panel'
+          : 'non-technical-panel';
+        const panel = document.getElementById(panelId);
+
+        requestAnimationFrame(() => {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>

@@ -55,7 +55,7 @@ body {
 
 .line2 {
     font-size: 30px;
-    color: rgb(88, 118, 216);
+    color:#B5E7FF;
     font-weight: bold;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -85,6 +85,7 @@ body {
 .nav-links li a {
     position: relative;
     font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
@@ -101,11 +102,19 @@ body {
 
 .msg{
     font-family: inherit;
-    font-size:100px;
+    display: block;
+    font-size: 100px;
     text-align:center;
-    font-weight: 500;
-    letter-spacing: 3px;
-    color:#B5E7FF
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 0.95;
+    color: #75f5ff;
+    background: linear-gradient(180deg, #c5ffff 0%, #58e9ff 42%, #087de5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 18px rgba(0, 194, 255, 0.8),
+                 0 0 42px rgba(0, 119, 255, 0.45);
 }
 
 .msg1{
