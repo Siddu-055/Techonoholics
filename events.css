@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 :root {
   --bg-base: #160f38;
   --glow-rose: #7828468c;
@@ -14,7 +16,7 @@
   --line: #ffffff29;
   --surface: #ffffff0d;
 
-  --font: "Times New Roman", Times, serif;
+  --font: "Orbitron", "Arial Black", "Century Gothic", sans-serif;
 }
 
 * {
@@ -26,6 +28,7 @@
 body {
   min-height: 100vh;
   font-family: var(--font);
+  font-weight: 600;
   color: var(--text);
   background:
     radial-gradient(circle at 15% 18%, var(--glow-rose) 0, transparent 40%),
@@ -326,7 +329,7 @@ a {
   height: 2.2rem;
   display: grid;
   place-items: center;
-  font-family: Georgia, var(--font);
+  font-family: inherit;
   font-size: 1.25rem;
   font-style: italic;
   font-weight: bold;
